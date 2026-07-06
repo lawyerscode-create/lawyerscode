@@ -947,9 +947,6 @@ Keep total under 250 words. No disclaimers.`;
     disputeEstimateBtn.addEventListener('click', runDisputeEstimate);
     disputeTypeInput.addEventListener('keydown', e => { if (e.key === 'Enter') runDisputeEstimate(); });
   </script>
-  <script type="module">
-    import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@1/+esm';
-    inject();
-  </script>
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>
 </html>
